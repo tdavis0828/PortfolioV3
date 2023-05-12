@@ -8,11 +8,11 @@ function Navbar() {
     <StyledNavBar>
       <div className="links-container">
         <Link to="/">Home</Link>
-        <Link to="#resume">Resume</Link>
-        <Link t0="#tech-stack">Tech Stack</Link>
+        <Link t0="#tech-stack">Skills</Link>
         <Link to="#projects">Projects</Link>
         <Link to="#testimonials">Testimonials</Link>
         <Link to="#contact">Contact</Link>
+        <Link to="#resume">Resume</Link>
       </div>
       <div className="logo-container">
         <img src={logo} alt="Davis Digital Logo" />
