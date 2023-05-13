@@ -8,7 +8,7 @@ function Navbar() {
     <StyledNavBar>
       <div className="links-container">
         <Link to="/">Home</Link>
-        <Link t0="#tech-stack">Skills</Link>
+        <Link to="#skills">Skills</Link>
         <Link to="#projects">Projects</Link>
         <Link to="#testimonials">Testimonials</Link>
         <Link to="#contact">Contact</Link>
