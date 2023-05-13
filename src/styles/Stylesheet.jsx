@@ -3,21 +3,20 @@ import { styled } from 'styled-components';
 // Color palette
 // dark blue: #181823
 // light blue: #5bc0f8
+// black: #181818
 
 // Styles for the nav bar
 export const StyledNavBar = styled.nav`
   height: 10vh;
   width: 100%;
-  background: #181823;
   display: flex;
   justify-content: space-between;
   align-items: center;
   & a {
     text-decoration: none;
     color: #5bc0f8;
-    margin: 1rem;
+    margin: 1rem 3rem;
     font-size: 1.25rem;
-    font-family: 'Assistant', sans-serif;
     font-weight: 300;
     &:hover {
       border-bottom: 1px solid #5bc0f8;
@@ -32,9 +31,9 @@ export const StyledNavBar = styled.nav`
   }
 `;
 
-// Styles for the home page
-export const StyledHome = styled.main`
-  height: 90vh;
+// Styles for the header on home page
+export const StyledHeader = styled.main`
+  height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -47,7 +46,6 @@ export const StyledHome = styled.main`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Assistant', sans-serif;
     color: #fff;
     position: relative;
     & span {
@@ -72,6 +70,7 @@ export const StyledHome = styled.main`
       color: #fff;
       cursor: pointer;
       transition: all 0.35s ease;
+      font-size: 1.15rem;
       &:hover {
         box-shadow: 0px 0px 5px 0.5px rgba(255, 255, 255, 0.5);
         text-decoration: underline;
@@ -90,6 +89,7 @@ export const StyledHome = styled.main`
         height: 50px;
         width: 50px;
         margin-right: 3rem;
+        cursor: pointer;
       }
     }
   }
@@ -105,12 +105,66 @@ export const StyledHome = styled.main`
       bottom: 10%;
       height: 75%;
     }
-    ${'' /* background: #000; */}
+  }
+`;
+
+// Styles for the skills section on home page
+export const StyledSkills = styled.section`
+  height: 55vh;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  & h2 {
+  }
+  & .front-end,
+  .back-end {
+    height: 200px;
+    width: 765px;
+    border-radius: 3px;
+    border: 5px solid #5bc0f8;
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2.5rem;
+    &:hover {
+      box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.6);
+      transition: all 0.35s ease;
+      transform: scale(105%);
+    }
+    & .skills {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      & img {
+        height: 50px;
+        width: 50px;
+      }
+      & p {
+        color: #5bc0f8;
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 5px;
+      }
+    }
+  }
+  & .header-text {
+    position: absolute;
+    top: 0;
+    left: 7.5%;
+    & span {
+      color: #5bc0f8;
+    }
   }
 `;
 
 export const StyledFooter = styled.footer`
   height: 10vh;
   width: 100%;
-  background: #181823;
 `;
