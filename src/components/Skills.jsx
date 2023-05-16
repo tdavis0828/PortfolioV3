@@ -1,24 +1,22 @@
-import React from 'react';
-import { StyledSkills } from '../styles/Stylesheet';
-import htmlLogo from '../imgs/html-5.png';
-import cssLogo from '../imgs/css-3.png';
-import jsLogo from '../imgs/js.png';
-import reactLogo from '../imgs/react.png';
-import wpLogo from '../imgs/wordpress.png';
-import bootstrapLogo from '../imgs/bootstrap.png';
-import phpLogo from '../imgs/php.png';
-import sqlLogo from '../imgs/mysql.png';
-import nodeLogo from '../imgs/node-js.png';
+import React from "react";
+import { StyledSkills } from "../styles/Stylesheet";
+import htmlLogo from "../imgs/html-5.png";
+import cssLogo from "../imgs/css-3.png";
+import jsLogo from "../imgs/js.png";
+import reactLogo from "../imgs/react.png";
+import wpLogo from "../imgs/wordpress.png";
+import bootstrapLogo from "../imgs/bootstrap.png";
+import phpLogo from "../imgs/php.png";
+import sqlLogo from "../imgs/mysql.png";
+import nodeLogo from "../imgs/node-js.png";
 
 function Skills() {
   return (
     <StyledSkills>
       <div className="header-text" id="skills">
-        <h2>What I do</h2>
-        <p>
-          I am skilled in both <span>Front-End</span> & <span>Back-End</span>{' '}
-          development
-        </p>
+        <h2>
+          What <span>I</span> do
+        </h2>
       </div>
       <div className="front-end">
         <h3>Front End Toolbox</h3>
