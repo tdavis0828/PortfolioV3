@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { styled } from 'styled-components';
 
 // Color palette
 // dark blue: #181823
@@ -7,7 +7,7 @@ import { styled } from "styled-components";
 
 // Styles for the nav bar
 export const StyledNavBar = styled.nav`
-  height: 75px;
+  height: 65px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -497,7 +497,7 @@ export const StyledContact = styled.section`
 `;
 
 export const StyledFooter = styled.footer`
-  height: 10vh;
+  height: 65px;
   width: 100%;
   color: #181823;
   background: #5bc0f8;
