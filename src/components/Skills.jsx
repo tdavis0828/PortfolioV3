@@ -14,9 +14,7 @@ function Skills() {
   return (
     <StyledSkills>
       <div className="header-text" id="skills">
-        <h2>
-          What <span>I</span> do
-        </h2>
+        <h2>Skills</h2>
       </div>
       <div className="front-end">
         <h3>Front End Toolbox</h3>

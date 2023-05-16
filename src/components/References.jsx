@@ -27,7 +27,7 @@ function References() {
         <ReferenceCard
           img={juanHeadshot}
           name="Juan Jucero"
-          title="React Native Apprenticeship Lead"
+          title="Apprenticeship Lead"
           email="jlucero@alphaworks.tech"
         />
       </div>

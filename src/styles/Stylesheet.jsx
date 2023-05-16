@@ -16,13 +16,10 @@ export const StyledNavBar = styled.nav`
   top: 0;
   z-index: 10;
   transition: all 0.35 ease;
+  background: #181823;
   &.light {
-    background: #5bc0f8;
     transition: all 0.35 ease;
-    box-shadow: 0 3px 5px -2px rgba(255, 255, 255, 0.45);
-    & a {
-      color: #181823;
-    }
+    box-shadow: 0 1px 5px 2px rgba(255, 255, 255, 0.05);
   }
   & a {
     text-decoration: none;
@@ -306,7 +303,7 @@ export const StyledReferences = styled.section`
   & .header-text {
     width: 80%;
     position: absolute;
-    top: 10%;
+    top: 0;
     left: 7.5%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 10px;
@@ -373,7 +370,6 @@ export const StyledReferenceCard = styled.div`
     font-size: 1.15rem;
     cursor: pointer;
     transition: all 0.35s ease;
-
     &:hover {
       background: #5bc0f8;
       color: #181823;
@@ -382,9 +378,121 @@ export const StyledReferenceCard = styled.div`
   }
 `;
 
+export const StyledContact = styled.section`
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  & .header-text {
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 7.5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+    & h2 {
+      font-size: 3rem;
+      font-weight: 500;
+      margin: 0;
+      color: #fff;
+    }
+  }
+  & .form-container,
+  .socials {
+    height: 450px;
+    width: 400px;
+    border-radius: 5px;
+    margin: 1rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  & .form-container {
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    & form {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      & label {
+        color: #5bc0f8;
+      }
+      & input,
+      textarea {
+        width: 350px;
+        height: 30px;
+        display: block;
+        margin: 0.5rem;
+        &:focus {
+          outline: none;
+        }
+      }
+      textarea {
+        height: 75px;
+      }
+      & button {
+        width: 350px;
+        height: 35px;
+        font-size: 1.15rem;
+        border: 1px solid #5bc0f8;
+        color: #5bc0f8;
+        background: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.35s ease;
+        &:hover {
+          background: #5bc0f8;
+          color: #181823;
+          transition: all 0.35s ease;
+        }
+      }
+    }
+  }
+  & .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    & .info-container {
+      & div {
+        display: flex;
+        align-items: center;
+        & p {
+          font-size: 1.45rem;
+          font-weight: 300;
+        }
+        & img {
+          height: 35px;
+          width: 35px;
+          margin: 1rem;
+        }
+      }
+    }
+    & .icons {
+      img {
+        width: 50px;
+        height: 50px;
+        margin: 0.5rem 1.25rem;
+      }
+    }
+  }
+`;
+
 export const StyledFooter = styled.footer`
   height: 10vh;
   width: 100%;
-  color: #fff;
-  background: gray;
+  color: #181823;
+  background: #5bc0f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
 `;
