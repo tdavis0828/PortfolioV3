@@ -1,68 +1,62 @@
-import React from 'react';
-import Slider from 'react-slick';
-import { StyledProjects } from '../styles/Stylesheet';
-import ProjectCard from './ProjectCard';
-import tpfScreenshot from '../imgs/tpf.png';
-import actaScreenshot from '../imgs/acta-sjvccc.png';
+import React from "react";
+import { StyledProjects } from "../styles/Stylesheet";
+import ProjectCard from "./ProjectCard";
+import tpfScreenshot from "../imgs/tpf.png";
+import actaScreenshot from "../imgs/acta-sjvccc.png";
+import drybarScreenshot from "../imgs/drybar.png";
+import revertScreenshot from "../imgs/revert.png";
 
 function Projects() {
   const desc =
-    'this is a fairly long description that I am writing for proof of concept';
-  var settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    className: 'image-slider',
-  };
+    "This is a fairly long description that I am writing for proof of concept...";
+
   return (
     <StyledProjects>
-      <Slider {...settings}>
-        <div>
-          <ProjectCard
-            img={tpfScreenshot}
-            desc={desc}
-            title="TOWER PORCHFEST"
-            tagOne="Javascript"
-            tagTwo="Wordpress"
-            tageThree="PHP"
-          />
-        </div>
-        <div>
-          <ProjectCard
-            img={actaScreenshot}
-            title="ACTA/SJVCCC"
-            desc={desc}
-            tagOne="Javascript"
-            tagTwo="Wordpress"
-            tageThree="PHP"
-          />
-        </div>
-        <div>
-          <ProjectCard
-            img={tpfScreenshot}
-            title="TOWER PORCHFEST"
-            desc={desc}
-            tagOne="Javascript"
-            tagTwo="Wordpress"
-            tageThree="PHP"
-          />
-        </div>
-        <div>
-          <ProjectCard
-            img={tpfScreenshot}
-            title="TOWER PORCHFEST"
-            desc={desc}
-            tagOne="Javascript"
-            tagTwo="Wordpress"
-            tageThree="PHP"
-          />
-        </div>
-      </Slider>
+      <div className="header-text">
+        <h2>Projects</h2>
+      </div>
+      <ProjectCard
+        img={tpfScreenshot}
+        link="https://www.towerporchfest.org"
+        desc={desc}
+        title="TOWER PORCHFEST"
+        tagOne="Javascript"
+        tagTwo="Wordpress"
+        tageThree="PHP"
+      />
 
-      {/* <button type="button">Github repo</button> */}
+      <ProjectCard
+        img={actaScreenshot}
+        link="https://www.towerporchfest.org"
+        title="ACTA/SJVCCC"
+        desc={desc}
+        tagOne="Javascript"
+        tagTwo="Wordpress"
+        tageThree="PHP"
+      />
+
+      <ProjectCard
+        img={revertScreenshot}
+        link="https://www.towerporchfest.org"
+        title="REVERT"
+        desc={desc}
+        tagOne="Javascript"
+        tagTwo="Wordpress"
+        tageThree="PHP"
+      />
+
+      <ProjectCard
+        img={drybarScreenshot}
+        link="https://www.towerporchfest.org"
+        title="DRY BAR"
+        desc={desc}
+        tagOne="Javascript"
+        tagTwo="Wordpress"
+        tageThree="PHP"
+      />
+      <div className="github-link">
+        <a href="/">More Projects...</a>
+      </div>
     </StyledProjects>
   );
 }

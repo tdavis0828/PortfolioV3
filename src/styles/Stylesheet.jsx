@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
 // Color palette
 // dark blue: #181823
@@ -12,7 +12,7 @@ export const StyledNavBar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 10;
   transition: all 0.35 ease;
@@ -45,7 +45,7 @@ export const StyledNavBar = styled.nav`
 
 // Styles for the header on home page
 export const StyledHeader = styled.main`
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -130,7 +130,7 @@ export const StyledHeader = styled.main`
 
 // Styles for the skills section on home page
 export const StyledSkills = styled.section`
-  height: 75vh;
+  height: 85vh;
   width: 100%;
   color: #fff;
   display: flex;
@@ -189,20 +189,47 @@ export const StyledSkills = styled.section`
 
 // Styles for the project cards
 export const StyledProjects = styled.section`
-  height: 100vh;
-  width: 90%;
+  height: 115vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin: auto;
-  & .image-slider {
-    ${'' /* height: 80%; */}
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  & .header-text {
+    width: 80%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+    position: absolute;
+    top: -10%;
+    left: 7.5%;
+    color: #fff;
+    & h2 {
+      font-size: 3rem;
+      font-weight: 500;
+      margin: 0;
+    }
+    & span {
+      color: #5bc0f8;
+    }
   }
+  & .github-link {
+    position: absolute;
+    bottom: -5%;
+    right: 7%;
+    & a {
+      text-decoration: none;
+      color: #5bc0f8;
+      font-size: 1.45rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
 `;
 export const StyledProjectCard = styled.div`
-  height: 400px;
-  width: 650px;
+  height: 350px;
+  width: 550px;
   background: #fff;
   place-self: center;
   border-radius: 5px;
@@ -211,60 +238,58 @@ export const StyledProjectCard = styled.div`
   justify-content: center;
   align-items: center;
   transition: all 0.25s ease;
-  ${
-    '' /* &:hover {
-    border: 1px solid #5bc0f8;
-    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-    transform: scale(105%);
-  } */
-  }
-  & div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 25%;
-    width: 100%;
-    & .project-info {
-      dislpay: flex;
+  
+    &:hover {
+      border: 1px solid #5bc0f8;
+      transition: all 0.25s ease;
+    }
+    & div {
+      display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
+      height: 55%;
       width: 100%;
-      height: 100%;
-      & p {
-        margin: 0;
-        padding: 0 10px;
+      & .project-info {
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        & a {
+          color: #181823;
+          font-size: 1.25rem;
+          font-weight: 500;
+          letter-spacing: 1px;
+          padding: 0 10px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        & p {
+          margin: 15px;
+          padding: 5px 7px;
+          border-radius: 30px;
+          color: #181823;
+        }
       }
-      & a {
-        text-decoration: none;
-        color: #181823;
-        font-size: 1.45rem;
-        font-weight: 500;
-        letter-spacing: 1px;
-        padding: 0 10px;
-        &:hover {
-          text-decoration: underline;
+      & .project-desc {
+        height: 20px;
+        color: #000;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        & p {
+          margin: 10px;
         }
       }
     }
-    & .project-tags {
-      height: 100%;
+    & img {
       width: 100%;
-      color: #fff;
-      & p {
-        margin: 15px;
-        padding: 5px;
-        border-radius: 5px;
-        color: #181823;
-        font-size: 1.1rem;
-      }
+      min-height: 75%;
+      border-radius: 5px 5px 0px 0px;
     }
-  }
-  & img {
-    width: 100%;
-    height: 75%;
-    border-radius: 5px 5px 0px 0px;
   }
 `;
 

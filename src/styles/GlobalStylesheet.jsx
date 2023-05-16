@@ -1,10 +1,13 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+* {
+  scroll-behavior: smoooth;
+
+}
     body {
         margin: 0;
         padding: 0;
-        scroll-behavior: smoooth;
         box-sizing: border-box;
         background: #181823;
         font-family: 'Assistant', sans-serif;
