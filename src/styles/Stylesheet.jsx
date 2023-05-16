@@ -7,17 +7,29 @@ import { styled } from 'styled-components';
 
 // Styles for the nav bar
 export const StyledNavBar = styled.nav`
-  height: 10vh;
+  height: 75px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: all 0.35 ease;
+  &.light {
+    background: #5bc0f8;
+    transition: all 0.35 ease;
+    box-shadow: 0 3px 5px -2px rgba(255, 255, 255, 0.45);
+    & a {
+      color: #181823;
+    }
+  }
   & a {
     text-decoration: none;
     color: #5bc0f8;
     margin: 1rem 3rem;
     font-size: 1.25rem;
-    font-weight: 300;
+    font-weight: 500;
     &:hover {
       border-bottom: 1px solid #5bc0f8;
     }
@@ -33,7 +45,7 @@ export const StyledNavBar = styled.nav`
 
 // Styles for the header on home page
 export const StyledHeader = styled.main`
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -56,8 +68,8 @@ export const StyledHeader = styled.main`
       width: 70%;
     }
     & h2 {
-      font-size: 2.25rem;
-      font-weight: 600;
+      font-size: 3.5rem;
+      font-weight: 500;
       margin: 0;
     }
     & button {
@@ -74,7 +86,7 @@ export const StyledHeader = styled.main`
       &:hover {
         box-shadow: 0px 0px 5px 0.5px rgba(255, 255, 255, 0.5);
         text-decoration: underline;
-        transition: all 0.35s ease;
+        transition: all 0.1s ease;
       }
     }
     & .icons-container {
@@ -90,6 +102,14 @@ export const StyledHeader = styled.main`
         width: 50px;
         margin-right: 3rem;
         cursor: pointer;
+        padding: 7px;
+        transition: all 0.25s ease;
+        border-radius: 50%;
+        &:hover {
+          box-shadow: 0px 0px 6px 1px rgba(255, 255, 255, 0.65);
+          transform: scale(110%);
+          transition: all 0.25s ease;
+        }
       }
     }
   }
@@ -110,34 +130,32 @@ export const StyledHeader = styled.main`
 
 // Styles for the skills section on home page
 export const StyledSkills = styled.section`
-  height: 55vh;
+  height: 75vh;
   width: 100%;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  & h2 {
-  }
   & .front-end,
   .back-end {
     height: 200px;
     width: 765px;
     border-radius: 3px;
-    border: 5px solid #5bc0f8;
+    border: 2px solid #5bc0f8;
     transition: all 0.35s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin: 2.5rem;
-    &:hover {
-      box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.6);
-      transition: all 0.35s ease;
-      transform: scale(105%);
+    & h3 {
+      font-size: 1.75rem;
+      font-weight: 400;
+      margin-top: 1rem;
     }
     & .skills {
-      height: 100%;
+      height: 100px;
       width: 100%;
       display: flex;
       justify-content: space-around;
@@ -156,11 +174,97 @@ export const StyledSkills = styled.section`
   }
   & .header-text {
     position: absolute;
-    top: 0;
+    top: 10%;
     left: 7.5%;
+    & h2 {
+      font-size: 3rem;
+      font-weight: 500;
+      margin: 0;
+    }
     & span {
       color: #5bc0f8;
     }
+  }
+`;
+
+// Styles for the project cards
+export const StyledProjects = styled.section`
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  & .image-slider {
+    ${'' /* height: 80%; */}
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+export const StyledProjectCard = styled.div`
+  height: 400px;
+  width: 650px;
+  background: #fff;
+  place-self: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease;
+  ${
+    '' /* &:hover {
+    border: 1px solid #5bc0f8;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    transform: scale(105%);
+  } */
+  }
+  & div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    & .project-info {
+      dislpay: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      height: 100%;
+      & p {
+        margin: 0;
+        padding: 0 10px;
+      }
+      & a {
+        text-decoration: none;
+        color: #181823;
+        font-size: 1.45rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 0 10px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    & .project-tags {
+      height: 100%;
+      width: 100%;
+      color: #fff;
+      & p {
+        margin: 15px;
+        padding: 5px;
+        border-radius: 5px;
+        color: #181823;
+        font-size: 1.1rem;
+      }
+    }
+  }
+  & img {
+    width: 100%;
+    height: 75%;
+    border-radius: 5px 5px 0px 0px;
   }
 `;
 

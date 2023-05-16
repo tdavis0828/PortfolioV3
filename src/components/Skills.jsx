@@ -14,9 +14,7 @@ function Skills() {
   return (
     <StyledSkills>
       <div className="header-text" id="skills">
-        <h2>
-          What <span>I</span> do
-        </h2>
+        <h2>What I do</h2>
         <p>
           I am skilled in both <span>Front-End</span> & <span>Back-End</span>{' '}
           development
@@ -36,7 +34,6 @@ function Skills() {
       <div className="back-end">
         <h3>Backend End Toolbox</h3>
         <div className="skills">
-          <p>MEAN</p>
           <img src={phpLogo} alt="PHP logo" />
           <img src={sqlLogo} alt="My SQL logo" />
           <img src={nodeLogo} alt="node js logo" />

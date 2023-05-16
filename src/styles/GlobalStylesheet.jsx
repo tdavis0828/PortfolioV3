@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         background: #181823;
         font-family: 'Assistant', sans-serif;
+        background-attachment: fixed;
         /* width */
 &::-webkit-scrollbar {
   width: 5px;
