@@ -42,7 +42,7 @@ export const StyledNavBar = styled.nav`
 
 // Styles for the header on home page
 export const StyledHeader = styled.main`
-  height: 100vh;
+  height: 85vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -69,7 +69,8 @@ export const StyledHeader = styled.main`
       font-weight: 500;
       margin: 0;
     }
-    & button {
+    & .view-work {
+      text-decoration: none;
       align-self: flex-start;
       margin-left: 15%;
       background: #5bc0f8;
@@ -90,7 +91,7 @@ export const StyledHeader = styled.main`
       height: 5vh;
       width: 50%;
       position: absolute;
-      bottom: 10%;
+      bottom: 3%;
       left: 15%;
       display: flex;
       align-items: center;
@@ -138,6 +139,7 @@ export const StyledSkills = styled.section`
   .back-end {
     height: 200px;
     width: 765px;
+    background: rgba(255, 255, 255, 0.01);
     border-radius: 3px;
     border: 2px solid #5bc0f8;
     transition: all 0.35s ease;
@@ -430,6 +432,11 @@ export const StyledContact = styled.section`
         height: 30px;
         display: block;
         margin: 0.5rem;
+        border: none;
+        border-radius: 5px;
+        &::placeholder {
+          padding-left: 0.5rem;
+        }
         &:focus {
           outline: none;
         }
@@ -465,7 +472,10 @@ export const StyledContact = styled.section`
       & div {
         display: flex;
         align-items: center;
-        & p {
+        & p,
+        a {
+          text-decoration: none;
+          color: #fff;
           font-size: 1.45rem;
           font-weight: 300;
         }

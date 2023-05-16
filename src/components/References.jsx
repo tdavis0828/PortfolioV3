@@ -7,7 +7,7 @@ import juanHeadshot from "../imgs/juanHeadshot.png";
 
 function References() {
   return (
-    <StyledReferences>
+    <StyledReferences id="references">
       <div className="header-text">
         <h2>References</h2>
       </div>

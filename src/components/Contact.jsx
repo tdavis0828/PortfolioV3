@@ -9,7 +9,7 @@ import linkedInLogo from "../imgs/linkedin.png";
 
 function Contact() {
   return (
-    <StyledContact>
+    <StyledContact id="contact">
       <div className="header-text" id="skills">
         <h2>Contact</h2>
       </div>
@@ -51,11 +51,11 @@ function Contact() {
         <div className="info-container">
           <div>
             <img src={phone} alt="phone icon" />
-            <p>555-555-5555</p>
+            <a href="tel:555-555-5555">555-555-5555</a>
           </div>
           <div>
             <img src={email} alt="email icon" />
-            <p>anemail@gmail.com</p>
+            <a href="mailto:davis.t8@gmail.com">davis.t8@gmail.com</a>
           </div>
 
           <div>
@@ -65,9 +65,27 @@ function Contact() {
         </div>
 
         <div className="icons">
-          <img src={linkedInLogo} alt="social media link" />
-          <img src={fiverrLogo} alt="social media link" />
-          <img src={githubLogo} alt="social media link" />
+          <a
+            href="https://github.com/tdavis0828"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={githubLogo} alt="Github logo" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tyler-davis-8aab37143/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={linkedInLogo} alt="Linked In logo" />
+          </a>
+          <a
+            href="https://www.fiverr.com/tylerdavis571/build-you-a-beautiful-website"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={fiverrLogo} alt="Fiverr logo" />
+          </a>
         </div>
       </div>
     </StyledContact>

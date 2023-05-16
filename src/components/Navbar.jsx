@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { StyledNavBar } from "../styles/Stylesheet";
 import logo from "../imgs/Davis.png";
 
@@ -21,12 +20,12 @@ function Navbar() {
   return (
     <StyledNavBar className={scrollPosition >= 1 ? "light" : ""}>
       <div className="links-container">
-        <Link to="/">Home</Link>
+        <a href="#home">Home</a>
         <a href="#skills">Skills</a>
-        <Link to="#projects">Projects</Link>
-        <Link to="#testimonials">References</Link>
-        <Link to="#contact">Contact</Link>
-        <Link to="#resume">Resume</Link>
+        <a href="#projects">Projects</a>
+        <a href="#references">References</a>
+        <a href="#contact">Contact</a>
+        <a href="#resume">Resume</a>
       </div>
       <div className="logo-container">
         <img src={logo} alt="Davis Digital Logo" />

@@ -11,7 +11,7 @@ function Projects() {
     "This is a fairly long description that I am writing for proof of concept...";
 
   return (
-    <StyledProjects>
+    <StyledProjects id="projects">
       <div className="header-text">
         <h2>Projects</h2>
       </div>
