@@ -130,7 +130,7 @@ export const StyledHeader = styled.main`
 
 // Styles for the skills section on home page
 export const StyledSkills = styled.section`
-  height: 85vh;
+  height: 100vh;
   width: 100%;
   color: #fff;
   display: flex;
@@ -173,9 +173,12 @@ export const StyledSkills = styled.section`
     }
   }
   & .header-text {
+    width: 80%;
     position: absolute;
     top: 10%;
     left: 7.5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
     & h2 {
       font-size: 3rem;
       font-weight: 500;
@@ -214,7 +217,7 @@ export const StyledProjects = styled.section`
   }
   & .github-link {
     position: absolute;
-    bottom: -5%;
+    bottom: 0;
     right: 7%;
     & a {
       text-decoration: none;
@@ -230,7 +233,7 @@ export const StyledProjects = styled.section`
 export const StyledProjectCard = styled.div`
   height: 350px;
   width: 550px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.1);
   place-self: center;
   border-radius: 5px;
   display: flex;
@@ -238,7 +241,6 @@ export const StyledProjectCard = styled.div`
   justify-content: center;
   align-items: center;
   transition: all 0.25s ease;
-  
     &:hover {
       border: 1px solid #5bc0f8;
       transition: all 0.25s ease;
@@ -257,7 +259,7 @@ export const StyledProjectCard = styled.div`
         justify-content: flex-start;
         align-items: center;
         & a {
-          color: #181823;
+          color: #5bc0f8;
           font-size: 1.25rem;
           font-weight: 500;
           letter-spacing: 1px;
@@ -270,7 +272,7 @@ export const StyledProjectCard = styled.div`
           margin: 15px;
           padding: 5px 7px;
           border-radius: 30px;
-          color: #181823;
+          color: #fff;
         }
       }
       & .project-desc {
@@ -282,6 +284,7 @@ export const StyledProjectCard = styled.div`
         align-items: flex-start;
         & p {
           margin: 10px;
+          color: #fff;
         }
       }
     }
@@ -293,7 +296,95 @@ export const StyledProjectCard = styled.div`
   }
 `;
 
+export const StyledReferences = styled.section`
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .header-text {
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    left: 7.5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+    & h2 {
+      font-size: 3rem;
+      font-weight: 500;
+      margin: 0;
+      color: #fff;
+    }
+    & span {
+      color: #5bc0f8;
+    }
+  }
+  & .card-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const StyledReferenceCard = styled.div`
+  height: 400px;
+  width: 300px;
+  margin: 2rem;
+  margin-top: 10rem;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  & img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0.5rem;
+  }
+  & p {
+    &.name {
+      font-size: 1.3rem;
+    }
+    &.title {
+      color: rgba(255, 255, 255, 0.55);
+    }
+    margin: 0;
+    & span {
+      color: #5bc0f8;
+    }
+  }
+  & a {
+    color: #fff;
+  }
+  & button {
+    margin: 1rem;
+    background: #181823;
+    color: #5bc0f8;
+    padding: 1rem 2rem;
+    border: 1px solid #5bc0f8;
+    border-radius: 5px;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: all 0.35s ease;
+
+    &:hover {
+      background: #5bc0f8;
+      color: #181823;
+      transition: all 0.35s ease;
+    }
+  }
+`;
+
 export const StyledFooter = styled.footer`
   height: 10vh;
   width: 100%;
+  color: #fff;
+  background: gray;
 `;

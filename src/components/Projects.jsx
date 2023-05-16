@@ -55,7 +55,13 @@ function Projects() {
         tageThree="PHP"
       />
       <div className="github-link">
-        <a href="/">More Projects...</a>
+        <a
+          href="https://github.com/tdavis0828"
+          target="_blank"
+          rel="noreferrer"
+        >
+          More Projects...
+        </a>
       </div>
     </StyledProjects>
   );
