@@ -362,7 +362,7 @@ export const StyledReferenceCard = styled.div`
   & a {
     color: #fff;
   }
-  & button {
+  & .button {
     margin: 1rem;
     background: #181823;
     color: #5bc0f8;
@@ -505,4 +505,21 @@ export const StyledFooter = styled.footer`
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
+`;
+
+export const StyledAlert = styled.div`
+  width: 1000px;
+  height: 35px;
+  position: fixed;
+  top: 15%;
+  left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4);
+  & p {
+    font-size: 1.25rem;
+    color: #fff;
+  }
 `;

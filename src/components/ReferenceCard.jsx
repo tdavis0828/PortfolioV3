@@ -1,5 +1,5 @@
-import React from "react";
-import { StyledReferenceCard } from "../styles/Stylesheet";
+import React from 'react';
+import { StyledReferenceCard } from '../styles/Stylesheet';
 
 function ReferenceCard({ img, name, title, email }) {
   return (
@@ -9,8 +9,10 @@ function ReferenceCard({ img, name, title, email }) {
         <span>{name}</span>
       </p>
       <p className="title">{title}</p>
-      <a href="mailto:scullen@bitwiseindustries.com">{email}</a>
-      <button type="button">Reach Out</button>
+      <p>{email}</p>
+      <a href={`mailto:${email}`} className="button">
+        Reach Out
+      </a>
     </StyledReferenceCard>
   );
 }

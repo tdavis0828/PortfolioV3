@@ -1,23 +1,61 @@
-import React from "react";
-import { StyledContact } from "../styles/Stylesheet";
-import mapPin from "../imgs/location.png";
-import email from "../imgs/email.png";
-import phone from "../imgs/telephone.png";
-import githubLogo from "../imgs/github.png";
-import fiverrLogo from "../imgs/fiverr.png";
-import linkedInLogo from "../imgs/linkedin.png";
+import React, { useState, useRef } from 'react';
+import Alert from './Alert';
+import { StyledContact } from '../styles/Stylesheet';
+import mapPin from '../imgs/location.png';
+import email from '../imgs/email.png';
+import phone from '../imgs/telephone.png';
+import githubLogo from '../imgs/github.png';
+import fiverrLogo from '../imgs/fiverr.png';
+import linkedInLogo from '../imgs/linkedin.png';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+  const [alertIsVisible, setAlertIsVisible] = useState(false);
+  const [isErr, setIsErr] = useState(false);
+  const form = useRef();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'service_sktr7g1',
+        'template_o4ggcv1',
+        form.current,
+        'uHBGQxiG0Tp_1kI1r'
+      )
+      .then(
+        (result) => {
+          setIsErr(false);
+          setAlertIsVisible(true);
+          setTimeout(() => {
+            setAlertIsVisible(false);
+          }, 3000);
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+          setIsErr(true);
+        }
+      );
+  }
   return (
     <StyledContact id="contact">
       <div className="header-text" id="skills">
         <h2>Contact</h2>
       </div>
       <div className="form-container">
-        <form>
+        <form ref={form} onSubmit={handleSubmit}>
+          {alertIsVisible && <Alert isErr={isErr ? 'false' : 'success'} />}
+
           <label htmlFor="name">
             Full Name
-            <input type="text" name="name" id="name" placeholder="Your Name" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
           </label>
           <label htmlFor="email">
             Email
@@ -26,6 +64,7 @@ function Contact() {
               name="email"
               id="email"
               placeholder="Your Email"
+              required
             />
           </label>
 
@@ -41,7 +80,7 @@ function Contact() {
 
           <label htmlFor="message">
             Message
-            <textarea name="message" id="message" />
+            <textarea name="message" id="message" required />
           </label>
 
           <button type="submit">Submit</button>
