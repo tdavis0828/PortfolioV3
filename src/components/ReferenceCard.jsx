@@ -9,7 +9,6 @@ function ReferenceCard({ img, name, title, email }) {
         <span>{name}</span>
       </p>
       <p className="title">{title}</p>
-      <p>{email}</p>
       <a href={`mailto:${email}`} className="button">
         Reach Out
       </a>

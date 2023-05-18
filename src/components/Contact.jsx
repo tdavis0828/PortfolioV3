@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { motion } from 'framer-motion';
 import Alert from './Alert';
 import { StyledContact } from '../styles/Stylesheet';
 import mapPin from '../imgs/location.png';
@@ -43,7 +44,13 @@ function Contact() {
       <div className="header-text" id="skills">
         <h2>Contact</h2>
       </div>
-      <div className="form-container">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ ease: 'linear', duration: 1.5, x: { duration: 1 } }}
+        className="form-container"
+      >
         <form ref={form} onSubmit={handleSubmit}>
           {alertIsVisible && <Alert isErr={isErr ? 'false' : 'success'} />}
 
@@ -85,8 +92,14 @@ function Contact() {
 
           <button type="submit">Submit</button>
         </form>
-      </div>
-      <div className="socials">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ ease: 'linear', duration: 1.5, x: { duration: 1 } }}
+        className="socials"
+      >
         <div className="info-container">
           <div>
             <img src={phone} alt="phone icon" />
@@ -126,7 +139,7 @@ function Contact() {
             <img src={fiverrLogo} alt="Fiverr logo" />
           </a>
         </div>
-      </div>
+      </motion.div>
     </StyledContact>
   );
 }

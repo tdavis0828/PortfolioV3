@@ -191,11 +191,8 @@ export const StyledSkills = styled.section`
 
 // Styles for the project cards
 export const StyledProjects = styled.section`
-  height: 115vh;
+  height: 75vh;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: auto;
   position: relative;
   & .header-text {
     width: 80%;
@@ -214,9 +211,15 @@ export const StyledProjects = styled.section`
       color: #5bc0f8;
     }
   }
+  & .projects-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   & .github-link {
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     right: 7%;
     & a {
       text-decoration: none;
@@ -233,7 +236,7 @@ export const StyledProjectCard = styled.div`
   height: 350px;
   width: 550px;
   background: rgba(255, 255, 255, 0.1);
-  place-self: center;
+  margin: 0 1rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -296,7 +299,7 @@ export const StyledProjectCard = styled.div`
 `;
 
 export const StyledReferences = styled.section`
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   position: relative;
   display: flex;

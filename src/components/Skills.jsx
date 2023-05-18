@@ -1,14 +1,15 @@
-import React from "react";
-import { StyledSkills } from "../styles/Stylesheet";
-import htmlLogo from "../imgs/html-5.png";
-import cssLogo from "../imgs/css-3.png";
-import jsLogo from "../imgs/js.png";
-import reactLogo from "../imgs/react.png";
-import wpLogo from "../imgs/wordpress.png";
-import bootstrapLogo from "../imgs/bootstrap.png";
-import phpLogo from "../imgs/php.png";
-import sqlLogo from "../imgs/mysql.png";
-import nodeLogo from "../imgs/node-js.png";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { StyledSkills } from '../styles/Stylesheet';
+import htmlLogo from '../imgs/html-5.png';
+import cssLogo from '../imgs/css-3.png';
+import jsLogo from '../imgs/js.png';
+import reactLogo from '../imgs/react.png';
+import wpLogo from '../imgs/wordpress.png';
+import bootstrapLogo from '../imgs/bootstrap.png';
+import phpLogo from '../imgs/php.png';
+import sqlLogo from '../imgs/mysql.png';
+import nodeLogo from '../imgs/node-js.png';
 
 function Skills() {
   return (
@@ -16,7 +17,13 @@ function Skills() {
       <div className="header-text" id="skills">
         <h2>Skills</h2>
       </div>
-      <div className="front-end">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ ease: 'linear', duration: 1.5, x: { duration: 1 } }}
+        className="front-end"
+      >
         <h3>Front End Toolbox</h3>
         <div className="skills">
           <img src={htmlLogo} alt="HTML 5 logo" />
@@ -26,8 +33,14 @@ function Skills() {
           <img src={reactLogo} alt="ReactJS logo" />
           <img src={wpLogo} alt="Wordpress logo" />
         </div>
-      </div>
-      <div className="back-end">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ ease: 'linear', duration: 1.5, x: { duration: 1 } }}
+        className="back-end"
+      >
         <h3>Backend End Toolbox</h3>
         <div className="skills">
           <img src={phpLogo} alt="PHP logo" />
@@ -35,7 +48,7 @@ function Skills() {
           <img src={nodeLogo} alt="node js logo" />
           <p>MERN</p>
         </div>
-      </div>
+      </motion.div>
     </StyledSkills>
   );
 }

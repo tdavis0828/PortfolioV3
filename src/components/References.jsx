@@ -1,9 +1,10 @@
-import React from "react";
-import { StyledReferences } from "../styles/Stylesheet";
-import ReferenceCard from "./ReferenceCard";
-import sarahHeadshot from "../imgs/sarahHeadshot.png";
-import austinHeadshot from "../imgs/austinHeadshot.png";
-import juanHeadshot from "../imgs/juanHeadshot.png";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { StyledReferences } from '../styles/Stylesheet';
+import ReferenceCard from './ReferenceCard';
+import sarahHeadshot from '../imgs/sarahHeadshot.png';
+import austinHeadshot from '../imgs/austinHeadshot.png';
+import juanHeadshot from '../imgs/juanHeadshot.png';
 
 function References() {
   return (
@@ -11,7 +12,13 @@ function References() {
       <div className="header-text">
         <h2>References</h2>
       </div>
-      <div className="card-container">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ ease: 'linear', duration: 1.5, x: { duration: 1 } }}
+        className="card-container"
+      >
         <ReferenceCard
           img={sarahHeadshot}
           name="Sarah Cullen"
@@ -30,7 +37,7 @@ function References() {
           title="Apprenticeship Lead"
           email="jlucero@alphaworks.tech"
         />
-      </div>
+      </motion.div>
     </StyledReferences>
   );
 }

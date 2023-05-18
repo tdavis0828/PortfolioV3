@@ -1,14 +1,20 @@
-import React from "react";
-import { StyledHeader } from "../styles/Stylesheet";
-import githubLogo from "../imgs/github.png";
-import fiverrLogo from "../imgs/fiverr.png";
-import linkedInLogo from "../imgs/linkedin.png";
-import headshot from "../imgs/headshot.png";
+import React from 'react';
+import { StyledHeader } from '../styles/Stylesheet';
+import githubLogo from '../imgs/github.png';
+import fiverrLogo from '../imgs/fiverr.png';
+import linkedInLogo from '../imgs/linkedin.png';
+import headshot from '../imgs/headshot.png';
+import { motion } from 'framer-motion';
 
 function Header() {
   return (
     <StyledHeader id="home">
-      <div className="hero-content">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.2 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 2 }}
+        className="hero-content"
+      >
         <p>My name is</p>
         <h2>
           <span>Tyler Davis</span>
@@ -21,7 +27,7 @@ function Header() {
           HTML/CSS/JavaScript, testing, Git, and Agile methodology. I build
           complex UIs, manage state, write tests, and collaborate with other
           developers. My expertise in best practices and industry standards
-          ensures scalable and maintainable web applications.{" "}
+          ensures scalable and maintainable web applications.{' '}
         </p>
         <a href="#projects" className="view-work">
           Check out my work
@@ -49,10 +55,15 @@ function Header() {
             <img src={fiverrLogo} alt="Fiverr logo" />
           </a>
         </div>
-      </div>
-      <div className="hero-image">
+      </motion.div>
+      <motion.div
+        className="hero-image"
+        initial={{ opacity: 0, scale: 0.2 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 2 }}
+      >
         <img src={headshot} alt="headshot" />
-      </div>
+      </motion.div>
     </StyledHeader>
   );
 }
