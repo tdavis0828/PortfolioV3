@@ -12,7 +12,7 @@ function Header() {
       <motion.div
         initial={{ opacity: 0, scale: 0.2 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
         className="hero-content"
       >
         <p>My name is</p>
@@ -60,7 +60,7 @@ function Header() {
         className="hero-image"
         initial={{ opacity: 0, scale: 0.2 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
       >
         <img src={headshot} alt="headshot" />
       </motion.div>

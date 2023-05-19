@@ -19,27 +19,23 @@ function Projects() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ ease: 'linear', duration: 3, x: { duration: 1 } }}
+        transition={{ ease: 'linear', duration: 2, x: { duration: 1 } }}
         className="projects-container"
       >
-        <ProjectCard
-          img={tpfScreenshot}
-          link="https://www.towerporchfest.org"
-          desc={desc}
-          title="TOWER PORCHFEST"
-          tagOne="Javascript"
-          tagTwo="Wordpress"
-          tageThree="PHP"
-        />
-
         <ProjectCard
           img={actaScreenshot}
           link="https://www.towerporchfest.org"
           title="ACTA/SJVCCC"
           desc={desc}
-          tagOne="Javascript"
-          tagTwo="Wordpress"
-          tageThree="PHP"
+          tag="Wordpress"
+        />
+
+        <ProjectCard
+          img={tpfScreenshot}
+          link="https://www.towerporchfest.org"
+          desc="A community outreach website that was used an interactive map to provide information and directions to events.."
+          title="TOWER PORCHFEST"
+          tag="PHP"
         />
 
         <ProjectCard
@@ -47,9 +43,7 @@ function Projects() {
           link="https://www.towerporchfest.org"
           title="REVERT"
           desc={desc}
-          tagOne="Javascript"
-          tagTwo="Wordpress"
-          tageThree="PHP"
+          tag="React"
         />
       </motion.div>
       <div className="github-link">

@@ -120,8 +120,8 @@ export const StyledHeader = styled.main`
     position: relative;
     & img {
       position: absolute;
-      bottom: 10%;
-      height: 75%;
+      bottom: 0;
+      height: 85%;
     }
   }
 `;
@@ -231,9 +231,10 @@ export const StyledProjects = styled.section`
         text-decoration: underline;
       }
     }
+  }
 `;
 export const StyledProjectCard = styled.div`
-  height: 350px;
+  height: 370px;
   width: 550px;
   background: rgba(255, 255, 255, 0.1);
   margin: 0 1rem;
@@ -243,58 +244,57 @@ export const StyledProjectCard = styled.div`
   justify-content: center;
   align-items: center;
   transition: all 0.25s ease;
-    &:hover {
-      border: 1px solid #5bc0f8;
-      transition: all 0.25s ease;
-    }
-    & div {
+  &:hover {
+    border: 1px solid #5bc0f8;
+    transition: all 0.25s ease;
+  }
+  & div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    width: 100%;
+    & .project-info {
+      height: 20px;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: flex-start;
       align-items: center;
-      height: 55%;
-      width: 100%;
-      & .project-info {
-        height: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        & a {
-          color: #5bc0f8;
-          font-size: 1.25rem;
-          font-weight: 500;
-          letter-spacing: 1px;
-          padding: 0 10px;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-        & p {
-          margin: 15px;
-          padding: 5px 7px;
-          border-radius: 30px;
-          color: #fff;
+      & a {
+        color: #5bc0f8;
+        font-size: 1.25rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 0 10px;
+        &:hover {
+          text-decoration: underline;
         }
       }
-      & .project-desc {
-        height: 20px;
-        color: #000;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        & p {
-          margin: 10px;
-          color: #fff;
-        }
+      & p {
+        margin: 15px;
+        padding: 5px 15px;
+        border-radius: 30px;
+        color: #181823;
       }
     }
-    & img {
-      width: 100%;
-      min-height: 75%;
-      border-radius: 5px 5px 0px 0px;
+    & .project-desc {
+      height: 50px;
+      color: #000;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      & p {
+        margin: 10px;
+        color: #fff;
+      }
     }
+  }
+  & img {
+    width: 100%;
+    min-height: 70%;
+    border-radius: 5px 5px 0px 0px;
   }
 `;
 
