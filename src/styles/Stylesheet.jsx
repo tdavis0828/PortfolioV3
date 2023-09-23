@@ -76,7 +76,7 @@ export const StyledBurgerMenu = styled.div`
 
 // Styles for the header on home page
 export const StyledHeader = styled.main`
-  height: 85vh;
+  height: 95vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -169,6 +169,20 @@ export const StyledHeader = styled.main`
       }
     }
   }
+  @media (max-width: 768px) {
+    height: 130vh;
+    flex-direction: column-reverse;
+    & .hero-image {
+      & img {
+        height: 100%;
+      }
+    }
+    & .hero-content {
+      & .icons-container {
+        bottom: -35px;
+      }
+    }
+  }
 `;
 
 // Styles for the skills section on home page
@@ -232,6 +246,19 @@ export const StyledSkills = styled.section`
       color: #5bc0f8;
     }
   }
+  @media (max-width: 768px) {
+    height: 110vh;
+    flex-direction: column;
+    justify-content: flex-end;
+    & .header-text {
+      top: 15%;
+    }
+    .front-end,
+    .back-end {
+      height: 150px;
+      width: 600px;
+    }
+  }
 `;
 
 // Styles for the project cards
@@ -277,12 +304,22 @@ export const StyledProjects = styled.section`
       }
     }
   }
+  @media (max-width: 768px) {
+    height: 190vh;
+    & .header-text {
+      top: 0;
+    }
+    & .projects-container {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 `;
 export const StyledProjectCard = styled.div`
   height: 370px;
   width: 550px;
   background: rgba(255, 255, 255, 0.1);
-  margin: 0 1rem;
+  margin: 1rem 1rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -362,6 +399,10 @@ export const StyledProjectCard = styled.div`
         }
       }
     }
+  }
+  @media (max-width: 768px) {
+    height: 250px;
+    width: 500px;
   }
 `;
 
