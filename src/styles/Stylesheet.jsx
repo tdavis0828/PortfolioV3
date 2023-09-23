@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
 // Color palette
 // dark blue: #181823
@@ -38,6 +38,40 @@ export const StyledNavBar = styled.nav`
       margin-top: 0.5rem;
     }
   }
+  @media (max-width: 992px) {
+    height: 100vh;
+    width: 165px;
+    flex-direction: column;
+    transform: translateX(-165px);
+    transition: all 0.35s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &#open {
+      transform: translateX(0);
+      transition: all 0.35s ease;
+    }
+    & .links-container {
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+    }
+    &.light {
+      box-shadow: none;
+    }
+  }
+`;
+
+export const StyledBurgerMenu = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  & img {
+    height: 40px;
+    width: 40px;
+    margin: 1.25rem;
+  }
 `;
 
 // Styles for the header on home page
@@ -57,6 +91,7 @@ export const StyledHeader = styled.main`
     align-items: center;
     color: #fff;
     position: relative;
+    line-height: 1.5rem;
     & span {
       color: #5bc0f8;
     }
@@ -122,6 +157,16 @@ export const StyledHeader = styled.main`
       position: absolute;
       bottom: 0;
       height: 85%;
+    }
+  }
+  @media (max-width: 1200px) {
+    & .hero-content {
+      & h2 {
+        font-size: 2.5rem;
+      }
+      & p {
+        font-size: 1rem;
+      }
     }
   }
 `;
@@ -296,10 +341,32 @@ export const StyledProjectCard = styled.div`
     min-height: 70%;
     border-radius: 5px 5px 0px 0px;
   }
+  @media (max-width: 1200px) {
+    width: 350px;
+    height: 250px;
+    & div {
+      & .project-info {
+        padding: 0.35rem;
+        & a {
+          font-size: 1rem;
+        }
+        & p {
+          font-size: 0.75rem;
+          padding: 0.15rem;
+          margin: 0;
+        }
+      }
+      & .project-desc {
+        & p {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
 `;
 
 export const StyledReferences = styled.section`
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   position: relative;
   display: flex;
@@ -328,6 +395,9 @@ export const StyledReferences = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  @media (max-width: 1200px) {
+    height: 100vh;
   }
 `;
 
@@ -496,6 +566,9 @@ export const StyledContact = styled.section`
         margin: 0.5rem 1.25rem;
       }
     }
+  }
+  @media (max-width: 1200px) {
+    height: 100vh;
   }
 `;
 
