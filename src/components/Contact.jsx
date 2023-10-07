@@ -131,13 +131,13 @@ function Contact() {
           >
             <img src={linkedInLogo} alt="Linked In logo" />
           </a>
-          <a
+          {/* <a
             href="https://www.fiverr.com/tylerdavis571/build-you-a-beautiful-website"
             target="_blank"
             rel="noreferrer"
           >
             <img src={fiverrLogo} alt="Fiverr logo" />
-          </a>
+          </a> */}
         </div>
       </motion.div>
     </StyledContact>

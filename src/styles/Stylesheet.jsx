@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { styled } from 'styled-components';
 
 // Color palette
 // dark blue: #181823
@@ -156,7 +156,7 @@ export const StyledHeader = styled.main`
     & img {
       position: absolute;
       bottom: 0;
-      height: 85%;
+      height: 70%;
     }
   }
   @media (max-width: 1200px) {
@@ -170,16 +170,24 @@ export const StyledHeader = styled.main`
     }
   }
   @media (max-width: 768px) {
-    height: 130vh;
+    height: 110vh;
     flex-direction: column-reverse;
     & .hero-image {
       & img {
+        top: 10px;
         height: 100%;
       }
     }
     & .hero-content {
       & .icons-container {
         bottom: -35px;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    & .hero-content {
+      & .icons-container {
+        bottom: -15%;
       }
     }
   }
@@ -247,7 +255,7 @@ export const StyledSkills = styled.section`
     }
   }
   @media (max-width: 768px) {
-    height: 110vh;
+    height: 100vh;
     flex-direction: column;
     justify-content: flex-end;
     & .header-text {
@@ -257,6 +265,14 @@ export const StyledSkills = styled.section`
     .back-end {
       height: 150px;
       width: 600px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    height: 90vh;
+    .front-end,
+    .back-end {
+      width: 450px;
     }
   }
 `;
@@ -305,7 +321,7 @@ export const StyledProjects = styled.section`
     }
   }
   @media (max-width: 768px) {
-    height: 190vh;
+    height: 150vh;
     & .header-text {
       top: 0;
     }
@@ -440,6 +456,18 @@ export const StyledReferences = styled.section`
   @media (max-width: 1200px) {
     height: 100vh;
   }
+  @media (max-width: 768px) {
+    height: 190vh;
+    & .card-container {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 576px) {
+    height: 170vh;
+    & .card-container {
+      flex-direction: column;
+    }
+  }
 `;
 
 export const StyledReferenceCard = styled.div`
@@ -491,6 +519,14 @@ export const StyledReferenceCard = styled.div`
       color: #181823;
       transition: all 0.35s ease;
     }
+  }
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+  @media (max-width: 576px) {
+    margin-top: 0;
+    height: 350px;
+    width: 250px;
   }
 `;
 
@@ -611,6 +647,14 @@ export const StyledContact = styled.section`
   @media (max-width: 1200px) {
     height: 100vh;
   }
+  @media (max-width: 768px) {
+    height: 120vh;
+    flex-direction: column-reverse;
+  }
+  @media (max-width: 576px) {
+    height: 120vh;
+    flex-direction: column-reverse;
+  }
 `;
 
 export const StyledFooter = styled.footer`
@@ -622,6 +666,9 @@ export const StyledFooter = styled.footer`
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
+  @media (max-width: 576px) {
+    font-size: 1rem;
+  }
 `;
 
 export const StyledAlert = styled.div`
@@ -638,5 +685,25 @@ export const StyledAlert = styled.div`
   & p {
     font-size: 1.25rem;
     color: #fff;
+  }
+  @media (max-width: 1200px) {
+    width: 900px;
+    top: 10%;
+    left: 10%;
+  }
+  @media (max-width: 992px) {
+    width: 800px;
+    top: 10%;
+    left: 10%;
+  }
+  @media (max-width: 768px) {
+    width: 600px;
+    top: 10%;
+    left: 10%;
+  }
+  @media (max-width: 576px) {
+    width: 400px;
+    top: 35%;
+    left: 15%;
   }
 `;
