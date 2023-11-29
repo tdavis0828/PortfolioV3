@@ -275,6 +275,14 @@ export const StyledSkills = styled.section`
       width: 450px;
     }
   }
+
+  @media (max-width: 376px) {
+    .front-end,
+    .back-end {
+      width: 365px;
+      transform: translate(15px, 10px);
+    }
+  }
 `;
 
 // Styles for the project cards
@@ -330,6 +338,7 @@ export const StyledProjects = styled.section`
       justify-content: center;
     }
   }
+  ${'' /* @media (max-width: ) */}
 `;
 export const StyledProjectCard = styled.div`
   height: 370px;

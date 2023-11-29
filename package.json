@@ -1,7 +1,7 @@
 {
   "name": "portfoliov3",
   "version": "0.1.0",
-  "homepage": "https://tdavis0828.github.io",
+  "homepage": "https://tdavis0828.github.io/portfoliov3",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
