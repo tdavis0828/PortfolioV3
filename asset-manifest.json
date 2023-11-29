@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.js": "/portfolioV3/static/js/main.ef6802af.js",
-    "static/media/acta-sjvccc.png": "/portfolioV3/static/media/acta-sjvccc.75448bd23d24f32a12ad.png",
-    "static/media/revert.png": "/portfolioV3/static/media/revert.be30baf8fd04e80ad618.png",
-    "static/media/tpf.png": "/portfolioV3/static/media/tpf.4d4cf163ac86b3aa57a3.png",
-    "static/media/headshot.png": "/portfolioV3/static/media/headshot.31618512b7bf7075988c.png",
-    "static/media/sarahHeadshot.png": "/portfolioV3/static/media/sarahHeadshot.1d800d774101600549c2.png",
-    "static/media/ReactResume.pdf": "/portfolioV3/static/media/ReactResume.5bafb8279114516f8bdf.pdf",
-    "static/media/austinHeadshot.png": "/portfolioV3/static/media/austinHeadshot.f82623ec289511c5ab9b.png",
-    "static/media/react.png": "/portfolioV3/static/media/react.809fed23bcdd686de66e.png",
-    "static/media/juanHeadshot.png": "/portfolioV3/static/media/juanHeadshot.73d149ec76f937e9797b.png",
-    "static/media/mysql.png": "/portfolioV3/static/media/mysql.4610cbabbff468ff8ae3.png",
-    "static/media/node-js.png": "/portfolioV3/static/media/node-js.e328955d6bbbf3ebc72b.png",
-    "static/media/php.png": "/portfolioV3/static/media/php.c67d24b47808dc6611ed.png",
-    "static/media/wordpress.png": "/portfolioV3/static/media/wordpress.11ed091523e3152b651f.png",
-    "static/media/location.png": "/portfolioV3/static/media/location.258e39ba338833c4a86c.png",
-    "static/media/css-3.png": "/portfolioV3/static/media/css-3.463e319bad8e0edf1ef7.png",
-    "static/media/bootstrap.png": "/portfolioV3/static/media/bootstrap.268c4375260420e8d982.png",
-    "static/media/js.png": "/portfolioV3/static/media/js.3dfb665e058d08c99f28.png",
-    "static/media/Davis.png": "/portfolioV3/static/media/Davis.c3fe93334a5d5abb748c.png",
-    "static/media/telephone.png": "/portfolioV3/static/media/telephone.7f1b1955b402d345d3c7.png",
-    "index.html": "/portfolioV3/index.html",
-    "main.ef6802af.js.map": "/portfolioV3/static/js/main.ef6802af.js.map"
+    "main.js": "/portfoliov3/static/js/main.714e97a8.js",
+    "static/media/acta-sjvccc.png": "/portfoliov3/static/media/acta-sjvccc.75448bd23d24f32a12ad.png",
+    "static/media/revert.png": "/portfoliov3/static/media/revert.be30baf8fd04e80ad618.png",
+    "static/media/tpf.png": "/portfoliov3/static/media/tpf.4d4cf163ac86b3aa57a3.png",
+    "static/media/headshot.png": "/portfoliov3/static/media/headshot.31618512b7bf7075988c.png",
+    "static/media/sarahHeadshot.png": "/portfoliov3/static/media/sarahHeadshot.1d800d774101600549c2.png",
+    "static/media/ReactResume.pdf": "/portfoliov3/static/media/ReactResume.5bafb8279114516f8bdf.pdf",
+    "static/media/austinHeadshot.png": "/portfoliov3/static/media/austinHeadshot.f82623ec289511c5ab9b.png",
+    "static/media/react.png": "/portfoliov3/static/media/react.809fed23bcdd686de66e.png",
+    "static/media/juanHeadshot.png": "/portfoliov3/static/media/juanHeadshot.73d149ec76f937e9797b.png",
+    "static/media/mysql.png": "/portfoliov3/static/media/mysql.4610cbabbff468ff8ae3.png",
+    "static/media/node-js.png": "/portfoliov3/static/media/node-js.e328955d6bbbf3ebc72b.png",
+    "static/media/php.png": "/portfoliov3/static/media/php.c67d24b47808dc6611ed.png",
+    "static/media/wordpress.png": "/portfoliov3/static/media/wordpress.11ed091523e3152b651f.png",
+    "static/media/location.png": "/portfoliov3/static/media/location.258e39ba338833c4a86c.png",
+    "static/media/css-3.png": "/portfoliov3/static/media/css-3.463e319bad8e0edf1ef7.png",
+    "static/media/bootstrap.png": "/portfoliov3/static/media/bootstrap.268c4375260420e8d982.png",
+    "static/media/js.png": "/portfoliov3/static/media/js.3dfb665e058d08c99f28.png",
+    "static/media/Davis.png": "/portfoliov3/static/media/Davis.c3fe93334a5d5abb748c.png",
+    "static/media/telephone.png": "/portfoliov3/static/media/telephone.7f1b1955b402d345d3c7.png",
+    "index.html": "/portfoliov3/index.html",
+    "main.714e97a8.js.map": "/portfoliov3/static/js/main.714e97a8.js.map"
   },
   "entrypoints": [
-    "static/js/main.ef6802af.js"
+    "static/js/main.714e97a8.js"
   ]
 }
