@@ -11,9 +11,8 @@ function Home() {
       <Header />
       <Skills />
       <Projects />
-      <Contact />
-
       <References />
+      <Contact />
     </>
   );
 }

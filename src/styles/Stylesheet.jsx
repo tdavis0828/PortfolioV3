@@ -591,7 +591,7 @@ export const StyledContact = styled.section`
     background: rgba(255, 255, 255, 0.01);
     border: 1px solid rgba(255, 255, 255, 0.1);
     & form {
-      height: 100%;
+      height: 550px;
       width: 100%;
       display: flex;
       flex-direction: column;
