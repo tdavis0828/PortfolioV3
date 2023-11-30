@@ -590,7 +590,6 @@ export const StyledContact = styled.section`
   & .form-container {
     background: rgba(255, 255, 255, 0.01);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    height: 100vh;
     & form {
       height: 100%;
       width: 100%;
@@ -699,7 +698,7 @@ export const StyledFooter = styled.footer`
     font-size: 1rem;
   }
   @media (max-width: 390px) {
-    ${'' /* font-size: 0.95rem; */}
+    font-size: 0.95rem;
   }
 `;
 
