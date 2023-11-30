@@ -191,6 +191,13 @@ export const StyledHeader = styled.main`
       }
     }
   }
+  @media (max-width: 390px) {
+    & .hero-image {
+      & img {
+        height: 85%;
+      }
+    }
+  }
 `;
 
 // Styles for the skills section on home page
@@ -214,7 +221,7 @@ export const StyledSkills = styled.section`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 2.5rem;
+    margin: 2rem;
     & h3 {
       font-size: 1.75rem;
       font-weight: 400;
@@ -583,6 +590,7 @@ export const StyledContact = styled.section`
   & .form-container {
     background: rgba(255, 255, 255, 0.01);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 100vh;
     & form {
       height: 100%;
       width: 100%;
@@ -683,8 +691,15 @@ export const StyledFooter = styled.footer`
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
+  text-align: center;
+  & p {
+    margin: 10px;
+  }
   @media (max-width: 576px) {
     font-size: 1rem;
+  }
+  @media (max-width: 390px) {
+    ${'' /* font-size: 0.95rem; */}
   }
 `;
 
