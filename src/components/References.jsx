@@ -22,7 +22,7 @@ function References() {
         <ReferenceCard
           img={sarahHeadshot}
           name="Sarah Cullen"
-          title="Senior Instruction & Program Lead"
+          title="Program Lead"
           email="scullen@bitwiseindustries.com"
         />
         <ReferenceCard

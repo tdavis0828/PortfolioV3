@@ -276,11 +276,11 @@ export const StyledSkills = styled.section`
     }
   }
 
-  @media (max-width: 376px) {
+  @media (max-width: 390px) {
     .front-end,
     .back-end {
-      width: 365px;
-      transform: translate(15px, 10px);
+      width: 325px;
+      transform: translate(0, 10px);
     }
   }
 `;
@@ -338,7 +338,6 @@ export const StyledProjects = styled.section`
       justify-content: center;
     }
   }
-  ${'' /* @media (max-width: ) */}
 `;
 export const StyledProjectCard = styled.div`
   height: 370px;
@@ -428,6 +427,10 @@ export const StyledProjectCard = styled.div`
   @media (max-width: 768px) {
     height: 250px;
     width: 500px;
+  }
+  @media (max-width: 390px) {
+    height: 230px;
+    width: 320px;
   }
 `;
 
@@ -536,6 +539,11 @@ export const StyledReferenceCard = styled.div`
     margin-top: 0;
     height: 350px;
     width: 250px;
+  }
+  @media (max-width: 390px) {
+    height: 300px;
+    width: 200px;
+    transform: translateY(30px);
   }
 `;
 
